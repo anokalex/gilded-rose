@@ -3,11 +3,11 @@ Dépôt pour le cours Architecture Logicielle
 
 Membres du groupe:
 
- Allali Kamal
+ Allali Kamal - kamal951
  
- Fofana Mohamed
+ Fofana Mohamed - MFOFANA154
   
- Patel Tayyib
+ Patel Tayyib - anokalex
  
- Sadji Nadjim 
+ Sadji Nadjim - Snadjim
   
