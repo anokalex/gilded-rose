@@ -7,6 +7,5 @@ Membres du groupe:
  Fofana Mohamed
   
  Patel Tayyib
- 
- Sadji Nadjim
+ Sadji Nadjim 
   
