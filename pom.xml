@@ -15,6 +15,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <plugins>
   <plugin>
     <groupId>org.eluder.coveralls</groupId>
     <artifactId>coveralls-maven-plugin</artifactId>
@@ -23,4 +24,5 @@
         <repoToken>33eE2sWCJvjrcXpN8Dts8DJAGpkH4cMFQ</repoToken>
     </configuration>
 </plugin>
+</plugins>	
 </project>
