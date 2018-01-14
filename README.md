@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/anokalex/gilded-rose.svg?branch=master)](https://travis-ci.org/anokalex/gilded-rose.svg?branch=master)
 
+[![Coverage Status](https://coveralls.io/repos/github/anokalex/gilded-rose/badge.svg?branch=master)](https://coveralls.io/github/anokalex/gilded-rose?branch=master)
+
 # gilded-rose
 Dépôt pour le cours Architecture Logicielle
 
