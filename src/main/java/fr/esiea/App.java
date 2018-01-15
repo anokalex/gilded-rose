@@ -10,4 +10,8 @@ public class App
     {
         System.out.println( "WSH!" );
     }
+	
+	public int add(int a, int b){
+		return a + b;
+	}
 }

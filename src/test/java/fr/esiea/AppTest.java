@@ -10,6 +10,7 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
+	private App app = new App();
     /**
      * Create the test case
      *
@@ -19,7 +20,7 @@ public class AppTest
     {
         super( testName );
     }
-
+	
     /**
      * @return the suite of tests being tested
      */
@@ -35,4 +36,8 @@ public class AppTest
     {
         assertTrue( true );
     }
+	
+	public void testAdd(){
+		assertEquals(app.add(5,5), 10);
+	}
 }
