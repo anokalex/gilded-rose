@@ -15,9 +15,9 @@ public class GildedRoseTest{
 		tavern.updateQuality();
 		
 		SoftAssertions softly = new SoftAssertions();
-		softly.assertThat(item.quality).as("Apple quality").isEqualTo(9);
+		softly.assertThat(item.getQuality()).as("Apple quality").isEqualTo(9);
 		
-		softly.assertThat(item.sellIn).as("Apple price").isEqualTo(1);
+		softly.assertThat(item.getSellIn()).as("Apple price").isEqualTo(1);
 		
 		softly.assertAll();
 	}
@@ -32,9 +32,9 @@ public class GildedRoseTest{
 		tavern.updateQuality();
 		
 		SoftAssertions softly = new SoftAssertions();
-		softly.assertThat(item.quality).as("Apple quality").isEqualTo(8);
+		softly.assertThat(item.getQuality()).as("Apple quality").isEqualTo(8);
 		
-		softly.assertThat(item.sellIn).as("Apple price").isEqualTo(-1);
+		softly.assertThat(item.getSellIn()).as("Apple price").isEqualTo(-1);
 		
 		softly.assertAll();
     }
@@ -49,9 +49,9 @@ public class GildedRoseTest{
         tavern.updateQuality();
 
         SoftAssertions solftly = new SoftAssertions();
-        solftly.assertThat(item.quality).as("Aged Brie quality").isEqualTo(12);
+        solftly.assertThat(item.getQuality()).as("Aged Brie quality").isEqualTo(12);
 
-        solftly.assertThat(item.sellIn).as("Aged Brie price").isEqualTo(-1);
+        solftly.assertThat(item.getSellIn()).as("Aged Brie price").isEqualTo(-1);
 
         solftly.assertAll();
     }
@@ -66,9 +66,9 @@ public class GildedRoseTest{
         tavern.updateQuality();
 
         SoftAssertions solftly = new SoftAssertions();
-        solftly.assertThat(item.quality).as("TAFKAL80ETC quality").isEqualTo(0);
+        solftly.assertThat(item.getQuality()).as("TAFKAL80ETC quality").isEqualTo(0);
 
-        solftly.assertThat(item.sellIn).as("TAFKAL80ETC price").isEqualTo(-1);
+        solftly.assertThat(item.getSellIn()).as("TAFKAL80ETC price").isEqualTo(-1);
 
         solftly.assertAll();
     }
@@ -79,6 +79,23 @@ public class GildedRoseTest{
         SoftAssertions solftly = new SoftAssertions();
 
         solftly.assertThat(item.toString()).as("Apple toString method").isEqualTo("Apple, 10, 10");
+
+        solftly.assertAll();
+    }
+
+    @Test
+    public void sulfuras_test() {
+        Item item = new Item("Sulfuras, Hand of Ragnaros", 10, 10);
+        Item[] items = new Item[]{item};
+
+        GildedRose tavern = new GildedRose(items);
+		
+        tavern.updateQuality();
+
+        SoftAssertions solftly = new SoftAssertions();
+        solftly.assertThat(item.getQuality()).as("Sulfuras, Hand of Ragnaros quality").isEqualTo(10);
+
+        solftly.assertThat(item.getSellIn()).as("TAFKAL80ETC price").isEqualTo(10);
 
         solftly.assertAll();
     }
