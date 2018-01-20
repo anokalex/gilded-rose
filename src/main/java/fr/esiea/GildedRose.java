@@ -27,6 +27,9 @@ class GildedRose {
             if(i.getSellIn() < 11){
                 i.incQuality();
             }
+            if(i.getSellIn() < 6){
+                i.incQuality();
+            }
         }
 
         i.decSellIn();
