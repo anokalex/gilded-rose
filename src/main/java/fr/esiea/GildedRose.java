@@ -10,29 +10,36 @@ class GildedRose {
     //Methode qui update pour Aged Brie
     private void updateAgedBrie(Item i){
         if(i.getQuality() < 50){
-            i.incQuality();
+           // i.incQuality();
+            i.setQuality(i.getQuality() + 1);
         }
 
-        i.decSellIn();
+        i.setSellIn(i.getSellIn() - 1);
+        //i.decSellIn();
 
         if(i.getSellIn() < 0 && i.getQuality() < 50){
-            i.incQuality();
+            //i.incQuality();
+            i.setQuality(i.getQuality() + 1);
         }
     }
 
     //Methode qui update pour TAFKAL80ETC
     private void updateTAFKAL80ETC(Item i){
         if(i.getQuality() < 50){
-            i.incQuality();
+            //i.incQuality();
+            i.setQuality(i.getQuality() + 1);
             if(i.getSellIn() < 11){
-                i.incQuality();
+                i.setQuality(i.getQuality() + 1);
+                //i.incQuality();
             }
             if(i.getSellIn() < 6){
-                i.incQuality();
+                i.setQuality(i.getQuality() + 1);
+//                i.incQuality();
             }
         }
 
-        i.decSellIn();
+//        i.decSellIn();
+        i.setSellIn(i.getSellIn() - 1);
 
         if(i.getSellIn() < 0){
             i.setQuality(0);
@@ -42,13 +49,15 @@ class GildedRose {
     //Methode qui update pour n'importe quel item
     private void updateItem(Item i){
         if(i.getQuality() > 0){
-            i.decQuality();
+            i.setQuality(i.getQuality() - 1);
+//            i.decQuality();
         }
 
-        i.decSellIn();
-
+//        i.decSellIn();
+        i.setSellIn(i.getSellIn() - 1);
         if(i.getSellIn() < 0 && i.getQuality() > 0){
-            i.decQuality();
+//            i.decQuality();
+            i.setQuality(i.getQuality() - 1);
         }
     }
 

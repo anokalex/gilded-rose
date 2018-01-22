@@ -14,24 +14,11 @@ public class Item {
         return this.sellIn;
     }
 
+    public void setSellIn(int sellIn){
+        this.sellIn = sellIn;
+    }
     public int getQuality(){
         return this.quality;
-    }
-
-    public void incSellIn(){
-        this.sellIn++;
-    }
-
-    public void incQuality(){
-        this.quality++;
-    }
-
-    public void decSellIn(){
-        this.sellIn--;
-    }
-
-    public void decQuality(){
-        this.quality--;
     }
 
     public void setQuality(int quality){

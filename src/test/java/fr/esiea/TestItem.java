@@ -23,38 +23,17 @@ public class TestItem{
 		Assert.assertEquals("apple", item.getName());
 	}
 
-    @Test
-	public void testIncQuality(){
-		Item item = new Item("apple", 2, 10);
-        item.incQuality();
-		Assert.assertEquals(11, item.getQuality());
-	}
-
-    @Test
-	public void testDecQuality(){
-		Item item = new Item("apple", 2, 10);
-        item.decQuality();
-		Assert.assertEquals(9, item.getQuality());
-	}
-
-    @Test
-	public void testIncSellIn(){
-		Item item = new Item("apple", 2, 10);
-        item.incSellIn();
-		Assert.assertEquals(3, item.getSellIn());
-	}
-
-    @Test
-	public void testDecSellIn(){
-		Item item = new Item("apple", 2, 10);
-        item.decSellIn();
-		Assert.assertEquals(1, item.getSellIn());
-	}
-
      @Test
 	public void testSetQuality(){
 		Item item = new Item("apple", 2, 10);
         item.setQuality(0);
 		Assert.assertEquals(0, item.getQuality());
+	}
+
+	@Test
+	public void testSetSellIn(){
+		Item item = new Item("apple", 2, 10);
+		item.setSellIn(0);
+		Assert.assertEquals(0, item.getSellIn());
 	}
 }
