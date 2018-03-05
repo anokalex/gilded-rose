@@ -5,6 +5,7 @@ public class Item {
     private String name;
     private int sellIn;
     private int quality;
+    private Integer id;
 
     public String getName(){
         return this.name;
@@ -17,6 +18,7 @@ public class Item {
     public void setSellIn(int sellIn){
         this.sellIn = sellIn;
     }
+
     public int getQuality(){
         return this.quality;
     }
@@ -25,15 +27,21 @@ public class Item {
         this.quality = quality;
     }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public Item(String name, int sellIn, int quality) {
         this.name = name;
         this.sellIn = sellIn;
         this.quality = quality;
     }
 
-   @Override
-   public String toString() {
+    @Override
+    public String toString() {
         return this.name + ", " + this.sellIn + ", " + this.quality;
     }
+
+
 
 }
