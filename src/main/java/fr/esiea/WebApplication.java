@@ -62,11 +62,10 @@ public class WebApplication {
                 .collect(Collectors.toList());
     }
 
-//    @RequestMapping("/buy_item")
-//    List<Item> buyItem() {
-//        return database.entrySet()
-//                .stream()
-//                .map(Entry::getValue)
-//                .collect(Collectors.toList());
-//    }
+    @RequestMapping("/buy_item")
+    void buyItem(@RequestParam("id") Integer id) {
+        Item item = database.get(id);
+        database.remove(item);
+
+    }
 }
